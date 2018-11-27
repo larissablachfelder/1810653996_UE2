@@ -24,7 +24,7 @@ public class Aufgabe5_1810653996
     }
 
     //in dieser methode ist die for-schleife wird aber nicht ausgeführt
-    static void forschleife(int a) //parameter der methode
+    static void forschleife(int a)
     {
        for(int i=1; i<=a; i++)
         {
@@ -34,13 +34,12 @@ public class Aufgabe5_1810653996
 
 
     static void whileschleife(int a)
-    {   int durchlauf=1; //anzahl durchläufe
-        int b = 0; //zählervariable mit startwert setzen
+    {
+        int b = 1; //zählervariable mit startwert setzen
         while(b<=a)
         {
-            System.out.println("Die WHILE-Schleife ist jetzt beim " + durchlauf + ". Mal. Die Zahl ist: " + b);
-            b=b+2; //variable erhöhen
-            durchlauf++;
+            System.out.println("Die WHILE-Schleife ist jetzt beim " + b + ". Mal.");
+            b++; //variable erhöhen
         }
     }
 
